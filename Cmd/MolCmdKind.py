@@ -1,7 +1,6 @@
 from enum import Enum
 
-class MolCmd(Enum):
+class MolCmdKind(Enum):
     Process = "Process",
-    ProcessNoGeoOpt = "ProcessNoGeoOpt",
     Analyse = "Analyse"
 

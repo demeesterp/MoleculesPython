@@ -1,7 +1,7 @@
-from Cmd.CmdKind import MolCmd
+from Cmd.CmdRunner import CmdRunner
 
 def main():
- print(MolCmd.Process.name)
+ CmdRunner().run()
 
 if __name__ == "__main__":
     main()
