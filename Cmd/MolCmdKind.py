@@ -1,6 +1,7 @@
 from enum import Enum
 
 class MolCmdKind(Enum):
-    Process = "Process",
-    Analyse = "Analyse"
+    dummy = "dummy",
+    process = "process",
+    analyse = "analyse"
 

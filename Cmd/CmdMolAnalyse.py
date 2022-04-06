@@ -1,3 +1,4 @@
 class CmdMolAnalyse:
-    def process(self):
-        print("process")
+    def process(self, basePath):
+        print(basePath)
+        print("analyse")

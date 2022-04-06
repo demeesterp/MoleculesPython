@@ -11,7 +11,7 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true,
-            "args": ["-i C:\\Data\\Molecules"]
+            "args": ["--cmd","analyse","--basepath","C:\\Data\\Molecules"]
         }
     ]
 }
