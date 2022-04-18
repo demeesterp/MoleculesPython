@@ -1,3 +1,6 @@
+from typing import Sequence
+
+
 class Molecule:
     def __init__(self):
         self.NameInfo = ''
@@ -9,13 +12,13 @@ class Molecule:
         self.HFEnergy = 0.0
         self.ElectronAffinity = 0.0
         self.Hardness = 0.0
-        self.Bonds = []
-        self.Atoms = []
-        self.ElPot = []
+        self.Bonds: Sequence[Bond] = []
+        self.Atoms: Sequence[Atom] = []
+        self.ElPot: Sequence[ElPot] = []
 
 class Atom:
     def __init__(self):
-        self.Orbitals = []
+        self.Orbitals: Sequence[Orbital] = []
         self.Position = 0
         self.Number = 0
         self.Symbol = ""
@@ -45,7 +48,6 @@ class Orbital:
         self.LowdinPopulation = 0.0
         self.LowdinPopulationAcid = 0.0
         self.LowdinPopulationBase =  0.0
-
 
 class Bond:
     def __init__(self) :
